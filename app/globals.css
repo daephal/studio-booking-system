@@ -1,0 +1,277 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0f0f13;
+  --surface: #17171c;
+  --surface-2: #1e1e24;
+  --surface-hover: #26262e;
+  --text: #ececef;
+  --text-muted: #a6a6b0;
+  --text-faint: #6e6e78;
+  --placeholder: #5e5e68;
+  --accent: #7e76a0;
+  --accent-hover: #928ab4;
+  --accent-soft: #a39cc6;
+  --accent-dot: #9e97be;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.12);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-hover: var(--surface-hover);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
+  --color-placeholder: var(--placeholder);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-dot: var(--accent-dot);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --font-sans: var(--font-montserrat), var(--font-noto-sans-kr);
+
+  /* 관리자 전용 토큰을 Tailwind 유틸리티(bg-adm-*, text-adm-* 등)로도 쓸 수 있게 등록 */
+  --color-adm-bg: var(--adm-bg);
+  --color-adm-surface: var(--adm-surface);
+  --color-adm-surface-2: var(--adm-surface-2);
+  --color-adm-surface-hover: var(--adm-surface-hover);
+  --color-adm-text: var(--adm-text);
+  --color-adm-text-muted: var(--adm-text-muted);
+  --color-adm-text-faint: var(--adm-text-faint);
+  --color-adm-placeholder: var(--adm-placeholder);
+  --color-adm-accent: var(--adm-accent);
+  --color-adm-accent-hover: var(--adm-accent-hover);
+  --color-adm-accent-soft: var(--adm-accent-soft);
+  --color-adm-border: var(--adm-border);
+  --color-adm-border-strong: var(--adm-border-strong);
+  --color-adm-status-received: var(--adm-status-received);
+  --color-adm-status-confirmed: var(--adm-status-confirmed);
+  --color-adm-status-shot-done: var(--adm-status-shot-done);
+  --color-adm-status-originals-sent: var(--adm-status-originals-sent);
+  --color-adm-status-selection-done: var(--adm-status-selection-done);
+  --color-adm-status-edits-sent: var(--adm-status-edits-sent);
+  --color-adm-status-closed: var(--adm-status-closed);
+  --color-adm-status-cancelled: var(--adm-status-cancelled);
+}
+
+/* 공용 폼/버튼 유틸리티 (다크+퍼플 테마 전역 일관성용) */
+/* width는 여기서 강제하지 않음 — Tailwind의 w-full/w-auto가 항상 이기도록 각 사용처에서 지정 */
+.jp-input {
+  border-radius: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.875rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  outline: none;
+  color-scheme: dark;
+}
+.jp-input:focus {
+  border-color: var(--accent-soft);
+}
+.jp-btn-primary {
+  background: var(--accent);
+  color: #fff;
+  transition: background-color 0.2s;
+}
+.jp-btn-primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+.jp-btn-primary:disabled {
+  opacity: 0.5;
+}
+.jp-btn-secondary {
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  transition: background-color 0.2s;
+}
+.jp-btn-secondary:hover:not(:disabled) {
+  background: var(--surface-hover);
+}
+.jp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+/* 접기/펴기 패널의 크기 조절 손잡이 — 기본 브라우저 손잡이가 잘 안 보여서 눈에 띄게 강조 */
+.jp-resizable {
+  border: 1px dashed var(--border-strong);
+}
+.jp-resizable::-webkit-resizer {
+  background: linear-gradient(135deg, transparent 0 50%, var(--accent-soft) 50% 60%, transparent 60% 70%, var(--accent-soft) 70% 80%, transparent 80% 100%);
+}
+
+/* ---------------------------------------------------------------------------
+ * 관리자 전용 토큰 (--adm-*) — 공개 페이지의 다크+퍼플과 분리된 "컨트롤 패널" 톤.
+ * 그래파이트 베이스 + 차분한 블루 포인트. 공개 페이지 토큰(--accent 등)은 그대로 둔다.
+ * --------------------------------------------------------------------------- */
+:root {
+  --adm-bg: #0b0c0e;
+  --adm-surface: #16181b;
+  --adm-surface-2: #1d2024;
+  --adm-surface-hover: #262a2f;
+  --adm-text: #ededf0;
+  --adm-text-muted: #9ba1aa;
+  --adm-text-faint: #676d76;
+  --adm-placeholder: #565b62;
+  --adm-accent: #4c8cff;
+  --adm-accent-hover: #6aa0ff;
+  --adm-accent-soft: #8fb6ff;
+  --adm-border: rgba(255, 255, 255, 0.07);
+  --adm-border-strong: rgba(255, 255, 255, 0.14);
+
+  /* 예약 상태별 태그 색 — StatusStepper/StatusFilterLine/상태 배지에서 사용 */
+  --adm-status-received: #8b93a1;
+  --adm-status-confirmed: #4c8cff;
+  --adm-status-shot-done: #3fb5a8;
+  --adm-status-originals-sent: #7b86e0;
+  --adm-status-selection-done: #b087e0;
+  --adm-status-edits-sent: #d9a94a;
+  --adm-status-closed: #4caf7d;
+  --adm-status-cancelled: #e0708a;
+}
+
+.adm-input {
+  border-radius: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.875rem;
+  background: var(--adm-surface-2);
+  border: 1px solid var(--adm-border-strong);
+  color: var(--adm-text);
+  outline: none;
+  color-scheme: dark;
+  transition: border-color 150ms ease-out;
+}
+.adm-input:focus {
+  border-color: var(--adm-accent-soft);
+}
+.adm-btn-primary {
+  background: var(--adm-accent);
+  color: #fff;
+  transition: background-color 150ms ease-out, transform 100ms ease-out;
+}
+.adm-btn-primary:hover:not(:disabled) {
+  background: var(--adm-accent-hover);
+}
+.adm-btn-primary:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.adm-btn-primary:disabled {
+  opacity: 0.5;
+}
+.adm-btn-secondary {
+  background: var(--adm-surface-2);
+  border: 1px solid var(--adm-border-strong);
+  color: var(--adm-text);
+  transition: background-color 150ms ease-out, transform 100ms ease-out;
+}
+.adm-btn-secondary:hover:not(:disabled) {
+  background: var(--adm-surface-hover);
+}
+.adm-btn-secondary:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.adm-btn-secondary:disabled {
+  opacity: 0.5;
+}
+.adm-card {
+  background: var(--adm-surface);
+  border: 1px solid var(--adm-border);
+}
+.adm-pill {
+  transition: background-color 150ms ease-out, color 150ms ease-out, transform 100ms ease-out;
+}
+.adm-pill:active {
+  transform: scale(0.96);
+}
+/* 큰 제목은 사이즈가 커질수록 자간을 좁혀 가독성을 살림(애플 타이포그래피 원칙) */
+.adm-h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-montserrat), var(--font-noto-sans-kr), -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent-soft);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+::placeholder {
+  color: var(--placeholder);
+}
+
+@keyframes jpFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes jpUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes jpFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+@keyframes jpPop {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 히어로 대표 사진 슬라이드쇼 — 천천히 확대/축소되며 다음 사진으로 페이드 전환 (app/(public)/Hero.tsx 에서 사용) */
+@keyframes jpKenBurns {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

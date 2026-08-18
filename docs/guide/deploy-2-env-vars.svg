@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="560" fill="#0b0c0e"/>
+  <rect x="16" y="16" width="768" height="500" rx="10" fill="#17171c" stroke="#2a2b31"/>
+  <circle cx="38" cy="38" r="5" fill="#e0708a"/>
+  <circle cx="56" cy="38" r="5" fill="#d9a94a"/>
+  <circle cx="74" cy="38" r="5" fill="#4caf7d"/>
+  <rect x="100" y="28" width="500" height="20" rx="6" fill="#0f1013"/>
+  <text x="112" y="42" fill="#7d838c" font-size="11">vercel.com/new/clone</text>
+
+  <text x="190" y="90" fill="#ececef" font-size="18" font-weight="bold">Environment Variables</text>
+  <text x="190" y="112" fill="#9ba1aa" font-size="12">각 값을 미리 준비한 메모장에서 복사해 붙여넣으세요</text>
+
+  <rect x="190" y="130" width="556" height="30" rx="6" fill="#0f1013" stroke="#2a2b31"/>
+  <text x="200" y="150" fill="#8fb6ff" font-size="11">NEXT_PUBLIC_SUPABASE_URL</text>
+  <rect x="420" y="134" width="316" height="22" rx="4" fill="#1d2024"/>
+
+  <rect x="190" y="168" width="556" height="30" rx="6" fill="#0f1013" stroke="#2a2b31"/>
+  <text x="200" y="188" fill="#8fb6ff" font-size="11">R2_ACCOUNT_ID</text>
+  <rect x="420" y="172" width="316" height="22" rx="4" fill="#1d2024"/>
+
+  <rect x="190" y="206" width="556" height="30" rx="6" fill="#0f1013" stroke="#2a2b31"/>
+  <text x="200" y="226" fill="#8fb6ff" font-size="11">GOOGLE_CLIENT_ID</text>
+  <rect x="420" y="210" width="316" height="22" rx="4" fill="#1d2024"/>
+
+  <text x="190" y="262" fill="#c7cbd1" font-size="12">... (총 15개 항목 — SETUP.md "필요한 값 미리 준비하기"에서 준비한 값 그대로)</text>
+
+  <circle cx="750" cy="150" r="16" fill="#4c8cff"/>
+  <text x="744" y="155" fill="#ffffff" font-size="14" font-weight="bold">1</text>
+  <rect x="184" y="124" width="568" height="118" rx="10" fill="none" stroke="#4c8cff" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <rect x="600" y="300" width="146" height="42" rx="8" fill="#4c8cff"/>
+  <text x="640" y="326" fill="#ffffff" font-size="14" font-weight="bold">Deploy</text>
+  <circle cx="675" cy="290" r="16" fill="#4c8cff"/>
+  <text x="669" y="295" fill="#ffffff" font-size="14" font-weight="bold">2</text>
+  <rect x="593" y="294" width="160" height="56" rx="10" fill="none" stroke="#4c8cff" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <text x="190" y="400" fill="#c7cbd1" font-size="12">→ 2~3분 기다리면 실제 사이트 주소(https://my-studio.vercel.app)가 나옵니다</text>
+
+  <text x="16" y="545" fill="#8fb6ff" font-size="14" font-weight="bold">⑨ Vercel — 값 채우고 Deploy 클릭</text>
+</svg>

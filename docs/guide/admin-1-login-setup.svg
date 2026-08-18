@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="560" fill="#0b0c0e"/>
+  <rect x="16" y="16" width="768" height="500" rx="10" fill="#0b0c0e" stroke="#2a2b31"/>
+  <circle cx="38" cy="38" r="5" fill="#e0708a"/>
+  <circle cx="56" cy="38" r="5" fill="#d9a94a"/>
+  <circle cx="74" cy="38" r="5" fill="#4caf7d"/>
+  <rect x="100" y="28" width="500" height="20" rx="6" fill="#111214"/>
+  <text x="112" y="42" fill="#7d838c" font-size="11">my-studio.vercel.app/admin/login</text>
+
+  <text x="270" y="180" fill="#ededf0" font-size="20" font-weight="bold">내 스튜디오 관리자</text>
+  <rect x="270" y="200" width="260" height="34" rx="8" fill="#1d2024" stroke="#3a3d43"/>
+  <text x="282" y="222" fill="#565b62" font-size="12">이메일</text>
+  <rect x="270" y="242" width="260" height="34" rx="8" fill="#1d2024" stroke="#3a3d43"/>
+  <text x="282" y="264" fill="#565b62" font-size="12">비밀번호</text>
+  <rect x="270" y="286" width="260" height="36" rx="10" fill="#4c8cff"/>
+  <text x="370" y="309" fill="#ffffff" font-size="13" font-weight="bold">로그인</text>
+  <circle cx="380" cy="278" r="15" fill="#4c8cff"/>
+  <text x="374" y="283" fill="#fff" font-size="13" font-weight="bold">1</text>
+  <text x="270" y="345" fill="#9ba1aa" font-size="11">→ 처음 만든 이메일/비밀번호로 다음부터는 이 화면에서 로그인</text>
+
+  <!-- arrow down to nav mockup -->
+  <text x="60" y="390" fill="#ececef" font-size="13" font-weight="bold">로그인 후 상단 메뉴:</text>
+  <rect x="60" y="400" width="700" height="70" rx="12" fill="#16181b" stroke="#3a3d43"/>
+  <rect x="76" y="412" width="88" height="24" rx="12" fill="#4c8cff"/>
+  <text x="88" y="428" fill="#fff" font-size="11">예약관리</text>
+  <text x="180" y="428" fill="#9ba1aa" font-size="11">홈페이지</text>
+  <text x="256" y="428" fill="#9ba1aa" font-size="11">설정</text>
+  <circle cx="270" cy="404" r="14" fill="#4c8cff"/>
+  <text x="265" y="409" fill="#fff" font-size="12" font-weight="bold">2</text>
+  <rect x="76" y="444" width="86" height="20" rx="10" fill="#4c8cff"/>
+  <text x="88" y="459" fill="#fff" font-size="10">설정 가이드</text>
+  <text x="180" y="459" fill="#9ba1aa" font-size="10">스튜디오 프로필</text>
+  <text x="290" y="459" fill="#9ba1aa" font-size="10">촬영 약관</text>
+  <text x="365" y="459" fill="#9ba1aa" font-size="10">예약 항목 설정</text>
+
+  <text x="16" y="545" fill="#8fb6ff" font-size="14" font-weight="bold">⑩ 관리자 로그인 → "설정" 탭 → "설정 가이드" 클릭</text>
+</svg>

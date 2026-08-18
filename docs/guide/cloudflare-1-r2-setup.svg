@@ -1,0 +1,37 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="560" fill="#0b0c0e"/>
+  <rect x="16" y="16" width="768" height="500" rx="10" fill="#17171c" stroke="#2a2b31"/>
+  <circle cx="38" cy="38" r="5" fill="#e0708a"/>
+  <circle cx="56" cy="38" r="5" fill="#d9a94a"/>
+  <circle cx="74" cy="38" r="5" fill="#4caf7d"/>
+  <rect x="100" y="28" width="500" height="20" rx="6" fill="#0f1013"/>
+  <text x="112" y="42" fill="#7d838c" font-size="11">dash.cloudflare.com/.../r2/overview</text>
+
+  <rect x="16" y="64" width="150" height="452" fill="#111216"/>
+  <text x="34" y="94" fill="#9ba1aa" font-size="12">Account home</text>
+  <rect x="24" y="110" width="126" height="26" rx="6" fill="#1d2024"/>
+  <text x="34" y="127" fill="#ececef" font-size="12" font-weight="bold">R2 Object Storage</text>
+
+  <text x="190" y="100" fill="#ececef" font-size="20" font-weight="bold">R2 Object Storage</text>
+
+  <rect x="600" y="80" width="150" height="36" rx="8" fill="#4c8cff"/>
+  <text x="618" y="103" fill="#ffffff" font-size="13" font-weight="bold">+ Create bucket</text>
+  <circle cx="675" cy="70" r="16" fill="#4c8cff"/>
+  <text x="669" y="75" fill="#ffffff" font-size="14" font-weight="bold">1</text>
+  <rect x="593" y="74" width="164" height="50" rx="10" fill="none" stroke="#4c8cff" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="190" y="150" fill="#c7cbd1" font-size="12">→ 버킷 이름 입력(자유, 예: my-studio-photos) → Create bucket 클릭</text>
+
+  <rect x="190" y="220" width="556" height="90" rx="8" fill="#1d2024" stroke="#2a2b31"/>
+  <text x="204" y="244" fill="#ececef" font-size="13" font-weight="bold">Account Details</text>
+  <text x="204" y="268" fill="#9ba1aa" font-size="12">API Tokens</text>
+  <rect x="640" y="252" width="90" height="28" rx="6" fill="#4c8cff"/>
+  <text x="654" y="270" fill="#fff" font-size="11" font-weight="bold">Manage</text>
+  <circle cx="700" cy="244" r="14" fill="#4c8cff"/>
+  <text x="695" y="249" fill="#fff" font-size="12" font-weight="bold">2</text>
+  <text x="204" y="292" fill="#9ba1aa" font-size="11">Account ID → R2_ACCOUNT_ID 값으로 사용</text>
+
+  <text x="190" y="350" fill="#c7cbd1" font-size="12">→ "Manage" 클릭 → "Create Account API token" → 권한: Object Read &amp; Write</text>
+  <text x="190" y="372" fill="#c7cbd1" font-size="12">→ 발급된 Access Key ID / Secret Access Key를 R2_ACCESS_KEY_ID / R2_SECRET_ACCESS_KEY에 저장</text>
+
+  <text x="16" y="545" fill="#8fb6ff" font-size="14" font-weight="bold">⑤ Cloudflare R2 — 버킷 + API 토큰 만들기</text>
+</svg>

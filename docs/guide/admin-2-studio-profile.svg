@@ -1,0 +1,46 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="560" fill="#0b0c0e"/>
+  <rect x="16" y="16" width="768" height="500" rx="10" fill="#0b0c0e" stroke="#2a2b31"/>
+  <circle cx="38" cy="38" r="5" fill="#e0708a"/>
+  <circle cx="56" cy="38" r="5" fill="#d9a94a"/>
+  <circle cx="74" cy="38" r="5" fill="#4caf7d"/>
+  <rect x="100" y="28" width="500" height="20" rx="6" fill="#111214"/>
+  <text x="112" y="42" fill="#7d838c" font-size="11">my-studio.vercel.app/admin/setup</text>
+
+  <text x="60" y="90" fill="#ededf0" font-size="18" font-weight="bold">설정 가이드</text>
+  <text x="60" y="112" fill="#9ba1aa" font-size="11">아래 순서대로 한 번씩 설정해보세요</text>
+
+  <rect x="60" y="130" width="330" height="60" rx="10" fill="#16181b" stroke="#3a3d43"/>
+  <text x="76" y="154" fill="#ececef" font-size="12" font-weight="bold">① 스튜디오 프로필</text>
+  <text x="76" y="174" fill="#9ba1aa" font-size="10">이름/계좌/카카오톡/인스타그램/운영규칙</text>
+  <circle cx="405" cy="160" r="15" fill="#4c8cff"/>
+  <text x="399" y="165" fill="#fff" font-size="13" font-weight="bold">1</text>
+
+  <rect x="420" y="130" width="316" height="60" rx="10" fill="#16181b" stroke="#3a3d43"/>
+  <text x="436" y="154" fill="#ececef" font-size="12" font-weight="bold">② 촬영 약관</text>
+  <text x="436" y="174" fill="#9ba1aa" font-size="10">취소/환불 규정 문구 수정</text>
+
+  <rect x="60" y="200" width="330" height="60" rx="10" fill="#16181b" stroke="#3a3d43"/>
+  <text x="76" y="224" fill="#ececef" font-size="12" font-weight="bold">③ 예약 항목 설정</text>
+  <text x="76" y="244" fill="#9ba1aa" font-size="10">촬영형태·텍스트 입력항목 구성</text>
+
+  <!-- form mockup for step 1 -->
+  <text x="60" y="300" fill="#ececef" font-size="14" font-weight="bold">① 스튜디오 프로필 폼:</text>
+  <rect x="60" y="312" width="700" height="170" rx="10" fill="#16181b" stroke="#3a3d43"/>
+  <text x="76" y="336" fill="#ececef" font-size="12" font-weight="bold">스튜디오 정보</text>
+  <text x="76" y="356" fill="#9ba1aa" font-size="10">스튜디오명</text>
+  <rect x="76" y="362" width="300" height="26" rx="6" fill="#1d2024" stroke="#3a3d43"/>
+  <circle cx="400" cy="375" r="13" fill="#4c8cff"/>
+  <text x="395" y="380" fill="#fff" font-size="11" font-weight="bold">2</text>
+
+  <text x="76" y="410" fill="#ececef" font-size="12" font-weight="bold">계좌정보</text>
+  <text x="76" y="428" fill="#9ba1aa" font-size="10">은행 / 계좌번호 / 예금주</text>
+  <rect x="76" y="434" width="600" height="24" rx="6" fill="#1d2024" stroke="#3a3d43"/>
+
+  <rect x="600" y="460" width="90" height="30" rx="8" fill="#4c8cff"/>
+  <text x="622" y="480" fill="#fff" font-size="12" font-weight="bold">저장</text>
+  <circle cx="710" cy="452" r="13" fill="#4c8cff"/>
+  <text x="705" y="457" fill="#fff" font-size="11" font-weight="bold">3</text>
+
+  <text x="16" y="545" fill="#8fb6ff" font-size="14" font-weight="bold">⑪ 원하는 카드 클릭 → 값 입력 → 저장 (반복)</text>
+</svg>

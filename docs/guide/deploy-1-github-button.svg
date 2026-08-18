@@ -1,0 +1,40 @@
+<svg viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+  <rect width="800" height="560" fill="#0b0c0e"/>
+  <rect x="16" y="16" width="768" height="500" rx="10" fill="#0d1117" stroke="#2a2b31"/>
+  <circle cx="38" cy="38" r="5" fill="#e0708a"/>
+  <circle cx="56" cy="38" r="5" fill="#d9a94a"/>
+  <circle cx="74" cy="38" r="5" fill="#4caf7d"/>
+  <rect x="100" y="28" width="500" height="20" rx="6" fill="#010409"/>
+  <text x="112" y="42" fill="#8b949e" font-size="11">github.com/daephal/studio-booking-system</text>
+
+  <text x="60" y="100" fill="#e6edf3" font-size="20" font-weight="bold">스냅사진 스튜디오 예약/갤러리 시스템</text>
+  <text x="60" y="128" fill="#8b949e" font-size="12">사진 스튜디오의 예약 접수, 원본사진 전달, 보정사진 셀렉을 처리하는 웹사이트</text>
+
+  <text x="60" y="170" fill="#e6edf3" font-size="15" font-weight="bold">바로 배포하기</text>
+
+  <rect x="60" y="190" width="130" height="38" rx="6" fill="#333941"/>
+  <text x="75" y="214" fill="#ffffff" font-size="13" font-weight="bold">▲ Deploy</text>
+  <circle cx="200" cy="180" r="16" fill="#4c8cff"/>
+  <text x="194" y="185" fill="#ffffff" font-size="14" font-weight="bold">1</text>
+  <rect x="52" y="182" width="146" height="54" rx="10" fill="none" stroke="#4c8cff" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="220" y="214" fill="#8b949e" font-size="12">← 이 버튼을 클릭하세요</text>
+
+  <!-- vercel new project mock -->
+  <rect x="60" y="280" width="656" height="200" rx="10" fill="#111216" stroke="#2a2b31"/>
+  <text x="80" y="308" fill="#ececef" font-size="14" font-weight="bold">New Project</text>
+  <text x="80" y="330" fill="#9ba1aa" font-size="11">Cloning from GitHub: daephal/studio-booking-system</text>
+
+  <text x="80" y="364" fill="#9ba1aa" font-size="12">GitHub 계정으로 로그인 (없으면 이메일로 무료 가입)</text>
+  <rect x="80" y="376" width="280" height="34" rx="6" fill="#1d2024" stroke="#2a2b31"/>
+  <text x="94" y="398" fill="#c7cbd1" font-size="12">🐙 Continue with GitHub</text>
+  <circle cx="380" cy="393" r="14" fill="#4c8cff"/>
+  <text x="375" y="398" fill="#fff" font-size="12" font-weight="bold">2</text>
+
+  <text x="80" y="440" fill="#9ba1aa" font-size="12">Project Name (= 사이트 주소가 됩니다)</text>
+  <rect x="80" y="450" width="280" height="30" rx="6" fill="#0f1013" stroke="#4c8cff" stroke-width="2"/>
+  <text x="92" y="470" fill="#c7cbd1" font-size="12">my-studio</text>
+  <circle cx="380" cy="465" r="14" fill="#4c8cff"/>
+  <text x="375" y="470" fill="#fff" font-size="12" font-weight="bold">3</text>
+
+  <text x="16" y="545" fill="#8fb6ff" font-size="14" font-weight="bold">⑧ 배포 버튼 클릭 → GitHub 로그인 → 프로젝트 이름 정하기</text>
+</svg>
